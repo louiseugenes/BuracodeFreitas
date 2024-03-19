@@ -1,0 +1,44 @@
+.main-container{
+	display: flex;
+	align-items: center;
+}
+
+.container-secondary{
+	left: 0;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+
+	#title-container-secondary {
+		width: 100px;
+		text-align: center;
+		margin-bottom: 10px;
+
+	}
+
+	#cards-container-secondary {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.card {
+		flex: 0 1 calc(33.333% - 10px);
+		margin: 5px;
+	}
+
+	.card-text{
+		li{
+			list-style-type: none;
+		}
+	}
+
+}
+
+
+.container-third{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
