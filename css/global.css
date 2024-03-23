@@ -10,18 +10,15 @@ body {
 
 header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 10px 20px; 
   background-color: #127de7;
   color: white;
 }
 
 .navbar-main {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  justify-content: space-between;
   display: flex;
+  width: 100%;
 }
 
 .navbar-child ul {
@@ -29,31 +26,36 @@ header {
   margin: 0;
   padding: 0;
   display: flex;
+  align-items: center;
 }
 
-.navbar-child {
-  margin-left: auto;
-  margin-right: 20px;
+.navbar-title-main {
+  position: relative;
+  font-size: 1.2em; 
 }
 
 .navbar-list-item{
-  
-  padding: 10px 15px;
+  position: relative;
+  left: 150vh;
   font-weight: bold;
 }
 
-@media (max-width: 1280){
-  .navbar-child li {
-    margin-right: 20px;
+@media (max-width: 1366px){
+  header {
+    padding: 5px 10px;
   }
 
+  .navbar-title-main {
+    position: relative;
+    font-size: 1.2em; 
+  }
+  
   .navbar-list-item{
-    color: inherit;
-    text-align: left;
-    text-decoration: none;
-    padding: 10px 15px;
+    position: relative;
+    left: 130vh;
     font-weight: bold;
   }
+
 }
 
 .navbar-child li a {
@@ -70,11 +72,6 @@ header {
   color: #127de7;
   border-radius: 25px;
 }
-
-#navbar-title-main {
-  font-size: 1.2em; 
-}
-
 
 footer {
   display: flex;
