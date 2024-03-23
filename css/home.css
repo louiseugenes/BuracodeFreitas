@@ -10,7 +10,7 @@
     margin: 5vh auto;
 }
 
-#question-main-container {
+.question-main-container {
     text-align: center;
     color: #fff;
     padding: 20px;
@@ -18,7 +18,7 @@
     margin-bottom: 10px;
 }
 
-#alert-main-container-button {
+.alert-main-container-button {
     text-align: center;
     padding: 20px;
     border-radius: 10px;
@@ -132,3 +132,16 @@ button:hover {
 	justify-content: center;
 	align-items: center;
 }
+
+@media (max-width: 1366px){
+    .alert-main-container-button {
+        position: relative;
+        text-align: center;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        top: -20px;
+    }    
+  
+  }
