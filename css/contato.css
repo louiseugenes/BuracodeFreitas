@@ -118,8 +118,3 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #45a049;
 }
-
-footer{
-    position: relative;
-    top: -76.3px;
-}
