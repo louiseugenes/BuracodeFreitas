@@ -1,7 +1,7 @@
 html, body {
   height: 100%;
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Open Sans", sans-serif, Arial;
 }
 
 body {
@@ -32,11 +32,12 @@ header {
 .navbar-title-main {
   position: relative;
   font-size: 1.2em; 
+  left: 30vh;
 }
 
 .navbar-list-item{
   position: relative;
-  left: 150vh;
+  left: 110vh;
   font-weight: bold;
 }
 
@@ -47,12 +48,13 @@ header {
 
   .navbar-title-main {
     position: relative;
+    left: 35vh;
     font-size: 1.2em; 
   }
   
   .navbar-list-item{
     position: relative;
-    left: 130vh;
+    left: 100vh;
     font-weight: bold;
   }
 
@@ -73,6 +75,35 @@ header {
   border-radius: 25px;
 }
 
+#photo-img::before{
+  position: relative;
+  top: 5px;
+  left: -3px;
+  content: url(/BuracodeFreitas/img/camera-svgrepo-com\ \(1\).svg);
+}
+
+#house-img::before{
+  content: url(/BuracodeFreitas/img/house-svgrepo-com.svg);
+  position: relative;
+  width: 100px;
+  top: 5px;
+  left: -3px;
+}
+
+#megaphone-img::before{
+  position: relative;
+  top: 5px;
+  left: -3px;
+  content: url(/BuracodeFreitas/img/megaphone-svgrepo-com.svg);
+}
+
+#phone-img::before{
+  position: relative;
+  top: 5px;
+  left: -3px;
+  content: url(/BuracodeFreitas/img/phone-alt-svgrepo-com.svg);
+}
+
 footer {
   display: flex;
   justify-content: center;
@@ -86,4 +117,5 @@ footer {
 #footer-text-main li {
   margin-bottom: 5px;
   list-style-type: none;
+  font-weight: bold;
 }

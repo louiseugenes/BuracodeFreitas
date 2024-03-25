@@ -1,38 +1,56 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Contato - Buraco de Freitas</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="/css/global.css">  <link rel="stylesheet" type="text/css" href="/css/contato.css">    </head>
-    <header>
-        <navbar id="navbar-main">
-            <div class="navbar-child">
-                <div class="navbar-child">
-                    <ul>
-                        <li> <a id="navbar-title-main">Buraco de Freitas</a></li>
-                        <li><a class="active" href="/html/home.html">Home</a></li>
-                        <li><a href="/html/denunciar.html">Denunciar</a></li>
-                        <li><a href="/html/contato.html">Contato</a></li>
-                    </ul>
-                </div>
-            </div>
-        </navbar>
-    </header>
-    <body>
-
-
-
-
-
-
-
-    </body>
-    <footer>
-        <div id="footer-text-main">
-            <ul>
-                <li>Copyright @ 2024 - Buraco de Freitas - Todos os direitos reservados</li>
-                <li>Desenvolvido com muito S2 por: Fulano de Tal</li>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>Fale Conosco</title>
+    <link rel="stylesheet" href="/BuracodeFreitas/css/contato.css">
+    <link rel="stylesheet" href="/BuracodeFreitas/css/global.css">
+</head>
+<header>
+    <nav id="navbar-main">
+        <div class="navbar-child">
+                <ul>
+                    <li><a id="photo-img" class="navbar-title-main" href="/BuracodeFreitas/html/home.html">Buraco de Freitas</a></li>
+                    <li><a id="house-img" class="navbar-list-item" href="/BuracodeFreitas/html/home.html">Home</a></li>
+                    <li><a id="megaphone-img" class="navbar-list-item" href="/BuracodeFreitas/html/denunciar.html">Denunciar</a></li>
+                    <li><a id="phone-img" class="navbar-list-item" href="/BuracodeFreitas/html/contato.html">Contato</a></li>
             </ul>
         </div>
-    </footer>
+    </nav>
+</header>
+<body>
+    <h2> <span class="titulo">Fale conosco</span></h2>
+    <hr>
+    <div class="container">
+        <form action="#" method="post">
+            <div class="form-group">
+                <div id="question-1" class="input-wrapper">
+                <label for="name"> Qual o seu nome:</label>
+               <input type="text" id="name" name="name" placeholder="Ex: Pedro Santos" required>
+            </div>
+            <div id="question-2" class="input-wrapper">  
+                <label for="email">Qual o seu E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Ex: pedro@example.com" required>
+            </div>
+            </div>
+            <div class="input-message">
+                <label for="message">Sua mensagem:</label>
+                <textarea id="message" type:  name="message" placeholder="Ex: Olá, gostaria de mais informações sobre..." required></textarea>
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+</body>
+<footer>
+    <div id="footer-text-main">
+        <ul>
+            <li>Copyright @ 2024 - Buraco de Freitas - Todos os direitos reservados</li>
+            <li>Desenvolvido com muito 🤍 por: Fulano de Tal</li>
+        </ul>
+    </div>
+</footer>
 </html>

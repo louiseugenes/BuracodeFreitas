@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">    
         <title>Buraco de Freitas</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="/css/global.css">  <link rel="stylesheet" type="text/css" href="/css/home.css">    </head>
+        <link rel="stylesheet" type="text/css" href="/BuracodeFreitas/css/global.css">  <link rel="stylesheet" type="text/css" href="/BuracodeFreitas/css/home.css">    </head>
     </head>
     <header>
         <nav id="navbar-main">
             <div class="navbar-child">
                     <ul>
-                        <li> <a class="navbar-title-main">Buraco de Freitas</a></li>
-                        <li><a class="navbar-list-item" href="/html/home.html">Home</a></li>
-                        <li><a class="navbar-list-item" href="/html/denunciar.html">Denunciar</a></li>
-                        <li><a class="navbar-list-item" href="/html/contato.html">Contato</a></li>
+                        <li><a id="photo-img" class="navbar-title-main" href="/BuracodeFreitas/html/home.html">Buraco de Freitas</a></li>
+                        <li><a id="house-img" class="navbar-list-item" href="/BuracodeFreitas/html/home.html">Home</a></li>
+                        <li><a id="megaphone-img" class="navbar-list-item" href="/BuracodeFreitas/html/denunciar.html">Denunciar</a></li>
+                        <li><a id="phone-img" class="navbar-list-item" href="/BuracodeFreitas/html/contato.html">Contato</a></li>
                     </ul>
             </div>
         </nav>
@@ -24,7 +27,7 @@
             </div>
             <div class="alert-main-container-button">
                 <button>
-                    Denuncie agora mesmo!
+                    <a href="/BuracodeFreitas/html/denunciar.html">Denuncie agora mesmo!</a>
                 </button>
             </div>
         </container>
@@ -35,21 +38,22 @@
             <hr>
         </div>
         <container class="container-secondary">
-            <div id="cards-container-secondary">
+            <div class="cards-container-secondary">
                 <div class="card" id="card1">
                     <div class="card-img" id="card1-img">
                         <img src="https://cdn.pixabay.com/photo/2022/12/03/11/58/background-7632549_960_720.jpg" alt="card1-img" width="300" height="200"/>
                     </div>
                     <div class="card-text" id="card1-text-main">
                         <ul>
-                            <li id="card1-text1-main">Av. Luiz Tarquíneo,233,Centro</li>
-                            <li id="card1-text2-main">Próximo a Alto Escola Vilas</li>
-                            <li id="card1-text3-main">Registrado há 3 meses</li>
+                            <li class="card-text1-main">Av. Luiz Tarquíneo, 233, Centro</li>
+                            <li class="card-text2-main">Próximo a Alto Escola Vilas</li>
+                            <li class="card-text3-main">Registrado há 3 meses</li>
                         </ul>
                     </div>
+                    <hr>
                     <div class="card-text" id="card1-text-seccondary">
                         <ul>
-                            <li id="card1-text1-secondary">
+                            <li class="card-text1-secondary">
                                 Não está mais lá? <a href="">Reporte</a>
                             </li>
                         </ul>
@@ -61,14 +65,15 @@
                     </div>
                     <div class="card-text" id="card2-text-main">
                         <ul>
-                            <li id="card2-text1-main">Av. Luiz Tarquíneo,233,Centro</li>
-                            <li id="card2-text2-main">Próximo a Alto Escola Vilas</li>
-                            <li id="card2-text3-main">Registrado há 3 meses</li>
+                            <li class="card-text1-main">Av. Fortaleza, 1555, Itinga</li>
+                            <li class="card-text2-main">Próximo a Bello Ferragens</li>
+                            <li class="card-text3-main">Registrado há 2 meses</li>
                         </ul>
                     </div>
+                    <hr>
                     <div class="card-text" id="card2-text-seccondary">
                         <ul>
-                            <li id="card2-text1-secondary">
+                            <li class="card-text1-secondary">
                                 Não está mais lá? <a href="">Reporte</a>
                             </li>
                         </ul>
@@ -80,33 +85,36 @@
                     </div>
                     <div class="card-text" id="card3-text-main">
                         <ul>
-                            <li id="card3-text1-main">Av. Luiz Tarquíneo,233,Centro</li>
-                            <li id="card3-text2-main">Próximo a Alto Escola Vilas</li>
-                            <li id="card3-text3-main">Registrado há 3 meses</li>
+                            <li class="card-text1-main">Rua Meire Teixeira, 12, Centro</li>
+                            <li class="card-text2-main">Próximo ao Colégio XPTO</li>
+                            <li class="card-text3-main">Registrado há 15 dias</li>
                         </ul>
                     </div>
+                    <hr>
                     <div class="card-text" id="card3-text-seccondary">
                         <ul>
-                            <li id="card3-text1-secondary">
+                            <li class="card-text1-secondary">
                                 Não está mais lá? <a href="">Reporte</a>
                             </li>
                         </ul>
                     </div>
                 </div>
+                <hr>
                 <div class="card" id="card4">
                     <div class="card-img" id="card4-img">
                         <img src="https://cdn.pixabay.com/photo/2022/12/03/11/58/background-7632549_960_720.jpg" alt="card4-img" width="300" height="200"/>
                     </div>
                     <div class="card-text" id="card4-text-main">
                         <ul>
-                            <li id="card4-text1-main">Av. Luiz Tarquíneo,233,Centro</li>
-                            <li id="card4-text2-main">Próximo a Alto Escola Vilas</li>
-                            <li id="card4-text3-main">Registrado há 3 meses</li>
+                            <li class="card-text1-main">Rua Meire Teixeira, 12, Centro</li>
+                            <li class="card-text2-main">Próximo ao Ginásio de esportes</li>
+                            <li class="card-text3-main">Registrado há 10 dias</li>
                         </ul>
                     </div>
+                    <hr>
                     <div class="card-text" id="card4-text-seccondary">
                         <ul>
-                            <li id="card4-text1-secondary">
+                            <li class="card-text1-secondary">
                                 Não está mais lá? <a href="">Reporte</a>
                             </li>
                         </ul>
@@ -118,14 +126,15 @@
                     </div>
                     <div class="card-text" id="card5-text-main">
                         <ul>
-                            <li id="card5-text1-main">Av. Luiz Tarquíneo,233,Centro</li>
-                            <li id="card5-text2-main">Próximo a Alto Escola Vilas</li>
-                            <li id="card5-text3-main">Registrado há 3 meses</li>
+                            <li class="card-text1-main">Av. Luiz Tarquíneo, 28, Centro</li>
+                            <li class="card-text2-main">Próximo a Faculdade UNIME</li>
+                            <li class="card-text3-main">Registrado há 3 dias</li>
                         </ul>
                     </div>
+                    <hr>
                     <div class="card-text" id="card5-text-seccondary">
                         <ul>
-                            <li id="card5-text1-secondary">
+                            <li class="card-text1-secondary">
                                 Não está mais lá? <a href="">Reporte</a>
                             </li>
                         </ul>
@@ -137,14 +146,15 @@
                     </div>
                     <div class="card-text" id="card6-text-main">
                         <ul>
-                            <li id="card6-text1-main">Av. Luiz Tarquíneo,233,Centro</li>
-                            <li id="card6-text2-main">Próximo a Alto Escola Vilas</li>
-                            <li id="card6-text3-main">Registrado há 3 meses</li>
+                            <li class="card-text1-main">Av. Luiz Tarquíneo, 26, Centro</li>
+                            <li class="card-text2-main">Próximo ao SENAI</li>
+                            <li class="card-text3-main">Registrado há 3 dias</li>
                         </ul>
                     </div>
+                    <hr>
                     <div class="card-text" id="card6-text-seccondary">
                         <ul>
-                            <li id="card6-text1-secondary">
+                            <li class="card-text1-secondary">
                                 Não está mais lá? <a href="">Reporte</a>
                             </li>
                         </ul>
@@ -162,25 +172,29 @@
                 </div>
                 <div id="ranking-table-display">
                     <table>
-                        <tr>
-                            <th>Nome</th>
-                            <th>Denuncias</th>
-                            <th>Posição</th>
+                        <hr id="hr1">
+                        <hr id="hr2">
+                        <hr id="hr3">
+
+                        <tr id="col-one">
+                            <th class="left">Nome</th>
+                            <th class="center">Denuncias</th>
+                            <th class="right">Posição</th>
+                        </tr>
+                        <tr id="col-two">
+                            <td class="left"><b>João Joaquim Silva e Santos</b></td>
+                            <td class="center">722</td>
+                            <td class="line-a"><img src="/BuracodeFreitas/img/golden-trophy.svg" alt="premio1" width="100" height="80"></td>
                         </tr>
                         <tr>
-                            <td>João Joaquim Silva e Santos</td>
-                            <td>722</td>
-                            <td><img src="https://png.pngtree.com/png-clipart/20191120/original/pngtree-trophy-icon-png-image_5069231.jpg" alt="premio1" width="100" height="80"></td>
+                            <td class="left">Vanessa Santana Anunciação</td>
+                            <td class="center">534</td>
+                            <td class="line-b"><img src="/BuracodeFreitas/img/silver-trophy.svg" alt="premio1" width="100" height="80"></td>
                         </tr>
-                        <tr>
-                            <td>Vanessa Santana Anunciação</td>
-                            <td>534</td>
-                            <td><img src="https://png.pngtree.com/png-clipart/20191120/original/pngtree-trophy-icon-png-image_5069231.jpg" alt="premio1" width="100" height="80"></td>
-                        </tr>
-                        <tr>
-                            <td>Diego Matos Abraão Silva</td>
-                            <td>113</td>
-                            <td><img src="https://png.pngtree.com/png-clipart/20191120/original/pngtree-trophy-icon-png-image_5069231.jpg" alt="premio1" width="100" height="80"></td>
+                        <tr id="col-three">
+                            <td class="left">Diego Matos Abraão Silva</td>
+                            <td class="center">113</td>
+                            <td class="line-c"><img src="/BuracodeFreitas/img/bronze_trophy.svg" alt="premio1" width="100" height="80"></td>
                         </tr>
                     </table>
                 </div>
@@ -191,7 +205,7 @@
         <div id="footer-text-main">
             <ul>
                 <li>Copyright @ 2024 - Buraco de Freitas - Todos os direitos reservados</li>
-                <li>Desenvolvido com muito S2 por: Fulano de Tal</li>
+                <li>Desenvolvido com muito 🤍 por: Fulano de Tal</li>
             </ul>
         </div>
     </footer>

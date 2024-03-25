@@ -3,37 +3,78 @@
     <head>
         <title>Denunciar - Buraco de Freitas</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="/css/global.css">  <link rel="stylesheet" type="text/css" href="/css/denunciar.css">    </head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="/BuracodeFreitas/css/global.css">
+        <link rel="stylesheet" type="text/css" href="/BuracodeFreitas/css/denunciar.css">    
     </head>
-    <header>
-        <navbar id="navbar-main">
-            <div class="navbar-child">
+    
+    <body class="denuncia">
+        <header>
+            <nav id="navbar-main">
                 <div class="navbar-child">
-                    <ul>
-                        <li> <a id="navbar-title-main">Buraco de Freitas</a></li>
-                        <li><a class="active" href="/html/home.html">Home</a></li>
-                        <li><a href="/html/denunciar.html">Denunciar</a></li>
-                        <li><a href="/html/contato.html">Contato</a></li>
-                    </ul>
+                        <ul>
+                            <li><a id="photo-img" class="navbar-title-main" href="/BuracodeFreitas/html/home.html">Buraco de Freitas</a></li>
+                            <li><a id="house-img" class="navbar-list-item" href="/BuracodeFreitas/html/home.html">Home</a></li>
+                            <li><a id="megaphone-img" class="navbar-list-item" href="/BuracodeFreitas/html/denunciar.html">Denunciar</a></li>
+                            <li><a id="phone-img" class="navbar-list-item" href="/BuracodeFreitas/html/contato.html">Contato</a></li>
+                            </ul>
                 </div>
+            </nav>
+        </header>
+        <div class="container">
+            <div class="wrapper">
+                <div class="title"><h1>Faça sua denuncia</h1></div>
+                
+                <form>
+                    <div class="row">
+                        <div class="column">
+                            <label for="nome">Qual seu nome?</label>
+                            <input type="text" id="nome" placeholder="Ex.: Pedro Santos">
+                         </div> 
+                         <div class="column">
+                            <label for="email">Qual seu e-mail?</label>
+                            <input type="email" id="email" placeholder="Ex.: email@gmail.com">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label for="local">Qual o local do buraco?</label>
+                        <input type="text" id="local" placeholder="Ex.: Av. Luiz Tarquinio Pontes, nº 137">
+                    </div> 
+                    
+                    <div class="row">
+                        <label for="ref">Ponto de referência</label>
+                        <input type="text" id="ref" placeholder="Ex.: Ao lado do mercado Rede Mix">
+                    </div> 
+
+                    <div class="row">
+                        <label class="foto" for="foto">Fotografia</label>
+                        <div class="dropbox">
+                            <label  class="foto" for="foto"> <span>Clique</span> ou <span>arraste</span> uma foto para aqui!</label>
+                            <input type="file" id="foto" placeholder="Clique ou arraste uma foto para aqui!" hidden>
+                        </div>
+                    </div>
+
+                    <div class="submit">
+                        <button id="registerBtn"> 
+                            <img src="/BuracodeFreitas/img/add-icon.svg" alt="icone de registro">
+                            <span>Registrar denuncia</span>
+                        </button>
+                    </div>
+
+                </form>
             </div>
-        </navbar>
-    </header>
-    <body>
-
-
-
-
-
-
-
-    </body>
-    <footer>
-        <div id="footer-text-main">
-            <ul>
-                <li>Copyright @ 2024 - Buraco de Freitas - Todos os direitos reservados</li>
-                <li>Desenvolvido com muito S2 por: Fulano de Tal</li>
-            </ul>
         </div>
-    </footer>
+
+        <footer>
+            <div id="footer-text-main">
+                <ul>
+                    <li>Copyright @ 2024 - Buraco de Freitas - Todos os direitos reservados</li>
+                    <li>Desenvolvido com muito 🤍 por: Fulano de Tal</li>
+                </ul>
+            </div>
+        </footer>
+    </body>
 </html>

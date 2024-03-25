@@ -1,0 +1,146 @@
+body{
+    box-sizing: border-box;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper{
+    max-width: 1024px;
+    padding: 0 0 66px 0;
+}
+
+.denuncia form label {
+    color: #333333;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    padding-bottom: 9px;
+}
+
+#nome, #email, #local, #ref, #foto {
+  padding: 13px 0px 14px 15px;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.denuncia input[type="text"], .denuncia input[type="email"] {
+    border-radius: 8px;
+    outline: none;
+    border: 2px solid #DBDBDB;   
+}
+
+.denuncia form {
+    box-shadow: 0px 0px 8px 1px #00000040;
+    padding:  24px 34px 77px 29px;
+    border-radius: 8px;
+}
+
+.navbar-child {
+ background-color: #127CE7;
+}
+
+.denuncia .title {
+    display: flex;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.denuncia .title h1 {
+    font-weight: bold;
+    color: #127ce7;
+    text-align: left;
+    border-bottom: 1px solid #DADADA;
+    width: 100%;
+    padding-bottom: 6px;
+}
+#foto {
+   padding: 70px 294px 70px 293px;
+    border: dashed grey;
+    margin-bottom: 67px;
+}
+
+#registerBtn {
+    border-radius: 30px;      
+    background-color: #2E8B02; 
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    font-family: "Inter", sans-serif; 
+    border-style: none;
+    border: 2px solid #225f06;
+    color: white;
+    width: 297px;
+}
+
+#registerBtn span {
+   font-size: 20px;
+   font-weight: 700;
+}
+
+.denuncia img {
+    margin-right: 3px;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-text-main {
+    background-color: #127ce7;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;  
+} 
+
+.row {
+    display: flex;
+    flex-direction: column;
+     padding-bottom: 22px;
+}
+
+.row:first-child {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.row:last-child {
+    margin-bottom: 47px;
+}
+
+.column {
+    display: flex;
+    flex: 50%;
+    flex-direction: column;
+}
+
+.denuncia .dropbox{
+    padding:70px 294px 70px 293px;
+    border-style: dashed;
+    border-color: #DBDBDB;
+    border-width: 5px;
+    width: 374px;
+    text-align: center;
+}
+
+.denuncia .dropbox label{
+    color: #A0A0A0;
+    font-size: 34px;
+    font-weight: 400;
+}
+
+.denuncia .dropbox span{
+    font-family: "Inter", sans-serif; 
+    font-weight: 700;
+    color: #A0A0A0;
+}

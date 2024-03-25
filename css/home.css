@@ -1,4 +1,5 @@
 .main-container{
+    background-image: url(/BuracodeFreitas/img/pool.jpg);
 	display: flex;
     flex-direction: column; /* Alterado para 'column' para empilhar verticalmente */
     align-items: center;
@@ -8,6 +9,7 @@
     background-color: #127de7;
     border-radius: 25px;
     margin: 5vh auto;
+    opacity: 80%;
 }
 
 .question-main-container {
@@ -16,26 +18,31 @@
     padding: 20px;
     width: 300px;
     margin-bottom: 10px;
+    font-size: 13px;
 }
 
 .alert-main-container-button {
     text-align: center;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 300px;
+    font-size: 13px;
 }
 
-button {
-    background-color: #4b4c4d;
-    color: #fff;
+button{
+    background-color: #01053b;
     border: none;
     padding: 15px 30px;
     cursor: pointer;
     border-radius: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: background-color 0.3s ease;
-    font-size: 1.1em; 
+    font-size: 1.1em;
+}
+
+button a{
+    color: #fff;
+    text-decoration: none;
 }
 
 button:hover {
@@ -50,25 +57,24 @@ button:hover {
 	height: auto;
 	width: 70%;
 	margin: 10vh auto;
-	background-color: #127de7;
-	border-radius: 25px;
 	padding: 20px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	
 
-    #cards-container-secondary {
+    .cards-container-secondary {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
 		align-items: center;
 		width: 100%;
+        
     }
 
     .card {
-        width: calc(30% - 20px);
+        width: calc(30% - 1px);
         margin: 10px;
         background-color: #f0f0f0;
         border-radius: 15px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
         padding: 10px; 
     }
 
@@ -81,6 +87,7 @@ button:hover {
 
     .card-text {
         padding: 10px;
+        text-align: center;
     }
 
     .card-text ul {
@@ -102,9 +109,20 @@ button:hover {
         text-decoration: underline;
     }
 
+    .card-text1-main{
+        font-weight: bold;
+        color: #127de7;
+    }
+
+    .card-text3-main{
+        font-weight: bold;
+    }
+
 }
 
 #title-container-secondary {
+    font-weight: bold;
+    color: #127de7;
 	flex-direction: column;
 	align-items: center;
 	width: 70%;
@@ -114,16 +132,15 @@ button:hover {
 }
 
 #text-title-container-secondary {
-	text-align: center;
 	margin-bottom: 0;
 }
 
 #title-container-secondary hr{
-	width: 100%;
+    position: relative;
+    left: -10px;
+	width: 1180px;
 	margin-top: -20px;
-	border: none;
-	height: 2px;
-	background-color: black;
+
 }
 
 .container-third{
@@ -133,15 +150,203 @@ button:hover {
 	align-items: center;
 }
 
+#ranking-table-display {
+    table-layout: fixed;
+	flex-direction: column;
+    top: -10vh;
+    position: relative;
+    border-radius: 7px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    width: 1180px;
+    text-align: center;
+
+    th:nth-child(1) {
+        width: 50%;
+        text-align: left;
+    }
+
+    th:nth-child(2) {
+        position: relative;
+        left: -20px;
+        width: 50%;
+        text-align: left;
+    }
+
+    th:nth-child(3) {
+        width: 50%;
+        text-align: left;
+    }
+
+    td:nth-child(1) {
+        width: 50%;
+        text-align: left;
+    }
+
+    td:nth-child(2) {
+        position: relative;
+        width: 200px;
+        text-align: left;
+    }
+
+    th{
+        font-size: 20px;
+        padding: 25px;
+    }
+
+    td{
+        font-size: 18px;
+        text-align: center;
+        padding: 25px;
+    }
+
+    #hr1{
+        position: relative;
+        top: 115px;
+        width: 100%;
+    }
+    #hr2{
+        position: relative;
+        top: 185px;
+        width: 100%;
+    }
+    #hr3{
+        position: relative;
+        top: 260px;
+        width: 100%;
+    }
+}
+
+
+#ranking-table-display img {
+    width: 25px;
+    height: 25px;
+}
+
+#ranking-title {
+    position: relative;
+    top: -12vh;
+    color: #127de7;
+
+    hr{
+        margin-top: -20px;
+    }
+}
+
 @media (max-width: 1366px){
     .alert-main-container-button {
         position: relative;
         text-align: center;
         padding: 10px;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         width: 300px;
-        top: -20px;
-    }    
+        top: -30px;
+    }
+
+    .container-secondary{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        height: auto;
+        width: 70%;
+        margin: 10vh auto;
+        padding: 20px;
+        
+    
+        .cards-container-secondary {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            
+        }
+    
+        .card {
+            width: calc(30% - 12px);
+            margin: 10px;
+            background-color: #f0f0f0;
+            border-radius: 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            padding: 10px; 
+        }
+    
+        .card-img img{
+            width: 100%;
+            height: auto;
+            border-radius: 15px 15px 0 0;
+            display: block;
+        }
+    
+        .card-text {
+            padding: 10px;
+            text-align: center;
+        }
+    
+        .card-text ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+    
+        .card-text li {
+            margin-bottom: 5px;
+        }
+    
+        .card-text a {
+            color: #127de7;
+            text-decoration: none;
+        }
+    
+        .card-text a:hover {
+            text-decoration: underline;
+        }
+    
+        .card-text1-main{
+            font-weight: bold;
+            color: #127de7;
+        }
+    
+        .card-text3-main{
+            font-weight: bold;
+        }
+    
+    }
+    
+    #title-container-secondary {
+        font-weight: bold;
+        color: #127de7;
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+        text-align: left;
+        margin: auto;
+        margin-bottom: -9vh;
+    }
+    
+    #text-title-container-secondary {
+        margin-bottom: 0;
+    }
+    
+    #title-container-secondary hr{
+        position: relative;
+        left: -5px;
+        width: 850px;
+        margin-top: -20px;
+    
+    }
+
+    #ranking-table-display {
+        table-layout: fixed;
+        flex-direction: column;
+        top: -10vh;
+        position: relative;
+        border-radius: 7px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        padding: 5px;
+        width: 800px;
+        text-align: center;
+    }
+    
   
   }
